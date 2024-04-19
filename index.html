@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax Effect</title>
+
+    <link rel="stylesheet" href="Moon-parallax-effect.css">
+    
+</head>
+
+<body>
+
+     <!------ Moon parallax effect ------>
+     <section id="Moon-parallax-effect">
+        <section id="section">
+        <img src="bg.jpg" id="bg">
+        <img src="moon.png" id="moon">
+        <img src="mountain.png" id="mountain">
+        <img src="road.png" id="road">
+        <h2 id="text">CODECRAZE</h2>
+        </section>
+        <section class="section white">
+            <h2>Cloud effect parallax </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, animi minus! Quo unde accusantium
+                doloremque impedit fuga magnam inventore quis enim nihil eligendi fugit adipisci, neque quia dicta minus
+                voluptatibus!
+                <br> <br>
+                ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quod veritatis impedit eius hic esse modi
+                est dolor temporibus iste repellat mollitia laboriosam fugiat amet reprehenderit ex. Sint, corporis
+                sequi!
+                <br> <br>
+                ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quod veritatis impedit eius hic esse modi
+                est dolor temporibus iste repellat mollitia laboriosam fugiat amet reprehenderit ex. Sint, corporis
+                sequi!
+            </p>
+        </section>
+    </section>
+     <script type="text/javascript">
+        let bg = document.getElementById("bg");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+
+            bg.style.top = value * 0.5 + 'px';
+            moon.style.left = -value  * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+        })
+    </script>
+
+</body>
+
+</html>
