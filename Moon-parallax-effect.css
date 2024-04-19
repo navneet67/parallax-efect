@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
-    background: #0a2a43;
+    background:;
     min-height: 1200px;
 }
 
@@ -24,7 +24,7 @@
     bottom: 0;
     width: 100%;
     height: 100px;
-    background: linear-gradient(to top, #0a2a43, transparent);
+    
     z-index: 10000;
 }
 
@@ -35,7 +35,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #0a2a43;
+    background:background: linear-gradient(to top, #0a2a43, transparent); ;
     z-index: 10000;
     mix-blend-mode: color;
 }
@@ -62,5 +62,6 @@
 }
 
 .white {
-    color: #fff;
+    color: black;
+    background-color:lightskyblue;
 }
